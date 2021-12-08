@@ -2,7 +2,7 @@ package ru.netology;
 
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.*;
+import static org.testng.Assert.*;
 
 public class CashbackHackerTest {
     private final CashbackHacker service = new CashbackHacker();
@@ -24,11 +24,11 @@ public class CashbackHackerTest {
 
     @Test
     public void shouldRemainBoundaryPlusOne() {
-        assertEquals(service.remain(1001), 0);
+        assertEquals(service.remain(1001), 999);
     }
 
     @Test
     public void shouldRemainMoreBoundary() {
-        assertEquals(service.remain(2000), 0);
+        assertEquals(service.remain(2505), 495);
     }
 }
