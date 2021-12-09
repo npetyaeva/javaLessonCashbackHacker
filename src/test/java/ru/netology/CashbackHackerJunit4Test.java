@@ -18,9 +18,7 @@ public class CashbackHackerJunit4Test {
     }
 
     @Test
-    public void shouldRemainBoundary() {
-        assertEquals(0, service.remain(1000));
-    }
+    public void shouldRemainBoundary() { assertEquals(0, service.remain(1000)); }
 
     @Test
     public void shouldRemainBoundaryPlusOne() {

@@ -29,6 +29,6 @@ class CashbackHackerJupiterTest {
 
     @Test
     void shouldRemainMoreBoundary() {
-        assertEquals(495, service.remain(2505));
+        assertEquals(500, service.remain(2500));
     }
 }
